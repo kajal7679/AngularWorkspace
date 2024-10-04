@@ -1,0 +1,36 @@
+<h1>Hello Angular</h1>
+
+<h1>Types Of Bindings</h1>
+
+<h2  style="color: brown;">1.Interpolation</h2>
+
+<h3>{{title}}  This is my title</h3>
+
+<h4>my obj {{obj}}</h4>
+
+<h4>my num {{num}}</h4>
+
+<p>{{arr}}</p>
+
+<p>{{isValid}}</p>
+
+
+<h2 style="color: brown;">2. Property Binding</h2>
+
+<input type="text" value="{{value1}}" [disabled]=wantToDisable>
+
+<h2 style="color: brown;">3. Event Binding</h2>
+
+<button (click)="ClickMe()">Click Me</button>
+
+<div (mouseover)="mouseOver()">
+  <p >
+   This Is My Paragraph
+  </p>
+</div>
+
+<h2 style="color: brown;">4. Two Way Data Binding</h2>
+
+<input type="text" [(ngModel)]="myval">
+
+<p>{{myval}}</p>

@@ -1,0 +1,22 @@
+/* Sign Up and Login component styles */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    max-width: 400px; /* Centered form */
+  }
+  
+  input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin: 10px 0; /* Space between inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%; /* Full width button */
+  }
+  

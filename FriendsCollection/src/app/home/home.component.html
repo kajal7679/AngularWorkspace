@@ -1,0 +1,33 @@
+<div class="home-container">
+  <header class="hero">
+    <h1>FriendsCollection</h1>
+    <p>Your one-stop shop for the latest men's fashion!</p>
+    <button (click)="goToSignUp()">Join Us Now</button>
+  </header>
+
+  <section class="featured-products">
+    <h2>Featured Products</h2>
+    <div class="products">
+      <div *ngFor="let product of products" class="product-card">
+        <img [src]="product.image" alt="{{ product.name }}" />
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.price | currency }}</p>
+        <button (click)="addToCart(product)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="customer-testimonials">
+    <h2>Customer Testimonials</h2>
+    <div class="testimonials">
+      <blockquote>
+        "Fantastic quality and great prices! I love my new clothes!"
+        <footer>- Fayaj S.</footer>
+      </blockquote>
+      <blockquote>
+        "The best shopping experience! Fast delivery and excellent service."
+        <footer>- Fayaj S.</footer>
+      </blockquote>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,37 @@
+{{'kajal'}}
+
+<h4>Pipes</h4>
+<h4>types of pipes <br>1.built in pipes <br>2.custom pipes</h4>
+
+<h3 style="color: brown;">1.built-in pipes </h3>
+  
+<h3>1.uppercase</h3>
+{{'kajal' | uppercase}}
+
+<h3>2.lowercase</h3>
+{{'Kajal' | lowercase}}
+
+<h3>3.title case</h3>
+{{'the kiran academy' | titlecase}}
+
+<h3>4.currency</h3>
+{{amount | currency:'INR'}}
+
+<h3>5.decimal pipe</h3>
+{{num | number:'4.2-3'}}
+
+<h3>6.percentage</h3>
+{{0.25 | percent}}
+
+<h3>7.object</h3>
+{{student| json}}
+
+
+<h3>8.date pipe</h3>
+<input type="date" name="birthdate" [(ngModel)]="birthDate">
+<h3>{{birthDate | date:'dd/MM/yyyy'}}</h3>
+
+
+<h3>9.i18nSelect pipe</h3>
+{{gender |i18nSelect:genderMapping}}
+

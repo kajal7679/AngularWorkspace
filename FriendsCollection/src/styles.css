@@ -1,0 +1,45 @@
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light background */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  h1, h2, h3 {
+    color: #343a40; /* Darker text */
+  }
+  
+  p {
+    color: #6c757d; /* Light grey for text */
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff; /* Primary button color */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly increase size */
+  }
+  
+  /* Add some responsive styles */
+  @media (max-width: 768px) {
+    .products div {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
+  
